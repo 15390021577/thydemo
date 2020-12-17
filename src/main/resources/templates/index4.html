@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+ <h1 th:text="${userName}"></h1>
+ <input type="text" th:value="${userName}"><br>
+<!--字符数:<em th:size="${userName}"></em><br>-->
+<!--拼接-->
+<span th:text="${userName}+'是梁翔的老师'"></span>
+ <span th:text="|fdsaggfds${userName}是梁翔的老师|"></span>
+</body>
+</html>

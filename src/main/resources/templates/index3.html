@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+ <table>
+     <tr>
+         <td>用户id</td>
+         <td>用户名字</td>
+         <td>用户年龄</td>
+         <td>用户的地址</td>
+         <td>序号</td>
+     </tr>
+     <!--interStart 是状态变量-->
+     <tr th:each="user,iterStart:${userList}">
+         <td th:text="${user.id}">用户id</td>
+         <td th:text="${user.name}">用户名字</td>
+         <td th:text="${user.age}">用户年龄</td>
+         <td th:text="${user.address}">用户的地址</td>
+         <td th:text="${iterStart.index}">序号 0</td>
+         <td th:text="${iterStart.count}">序号 1</td>
+         <td th:text="${iterStart.size}">集合的大小</td>
+         <td th:text="${iterStart.current}">当前的迭代变量</td>
+         <td th:text="${iterStart.even}">序号偶数</td>
+         <td th:text="${iterStart.odd}">序号奇数</td>
+         <td th:text="${iterStart.first}">第一个元素？</td>
+         <td th:text="${iterStart.last}">随后一个元素？</td>
+     </tr>
+ </table>
+</body>
+</html>
