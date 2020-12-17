@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class TestController {
     @RequestMapping("/helloGit")
     public String hell(){
-        System.out.println("----------");
+        System.out.println("----------11111111111111111111111");
         return "success";
     }
 }
