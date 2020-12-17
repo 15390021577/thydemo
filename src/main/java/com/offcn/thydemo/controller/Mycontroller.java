@@ -14,7 +14,7 @@ import java.util.List;
 public class Mycontroller {
     @RequestMapping("/hello")
     public String hello(Model model){
-        System.out.println("==========");
+        System.out.println("==========111111111111111111111111111111111111111111111");
         model.addAttribute("msg","hello thymeleaf");
         return "index";
     }
